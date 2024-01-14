@@ -3,7 +3,7 @@ import "./App.css";
 import io from "socket.io-client";
 import { FaSnowflake } from "react-icons/fa6";
 import { CgDanger } from "react-icons/cg";
-import { CiSun } from "react-icons/ci";
+import { LiaTemperatureLowSolid } from "react-icons/lia";
 
 function App() {
   const [temperature, setTemperature] = useState({
@@ -23,7 +23,7 @@ function App() {
           setIcon(<FaSnowflake size={128} />);
         } else if (data < 70) {
           setTemperature({ temperature: data, color: "#4caf50" });
-          setIcon(<CiSun size={128} />);
+          setIcon(<LiaTemperatureLowSolid size={128} />);
         } else {
           setTemperature({ temperature: data, color: "#f44336" });
           setIcon(<CgDanger size={128} />);
