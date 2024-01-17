@@ -8,7 +8,7 @@ const socketIO = require("socket.io");
 
 // URL du courtier MQTT et le sujet (topic) à écouter
 const brokerUrl = "mqtt://test.mosquitto.org";
-const topic = "Temp";
+const topic = "TempIOT";
 
 // Initialisation d'une application Express
 const app = express();

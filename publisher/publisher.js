@@ -7,7 +7,7 @@ const mqtt = require("mqtt");
 const brokerUrl = "mqtt://test.mosquitto.org";
 
 // Sujet (topic) sur lequel les données seront publiées
-const topic = "Temp";
+const topic = "TempIOT";
 
 // Crée un client MQTT en se connectant au courtier
 const client = mqtt.connect(brokerUrl);
